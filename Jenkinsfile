@@ -51,7 +51,6 @@ pipeline {
                 to: "naveenmys64@gmail.com"
             )
         }
-
         failure {
             emailext (
                 subject: "FAILED: ${JOB_NAME} #${BUILD_NUMBER}",
@@ -61,3 +60,4 @@ pipeline {
         }
     }
 }
+ 
